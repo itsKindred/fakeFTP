@@ -4,9 +4,7 @@ bind_ip = "0.0.0.0" #change as needed
 bind_port = 21 #change as needed
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 server.bind((bind_ip,bind_port))
-
 server.listen(10)
 print("[*] Listening on " + bind_ip + ":" + str(bind_port)) 
 
